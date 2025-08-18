@@ -35,8 +35,8 @@ runs:
       shell: bash
 
     # This is added because of bug in Github MacOS machine 
-    - name: ios 18.1 install version
-      run: xcodebuild -downloadPlatform iOS -buildVersion 18.1
+    - name: list ios version 
+      run: xcrun simctl list
       shell: bash
 
 

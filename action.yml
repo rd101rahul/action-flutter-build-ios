@@ -34,6 +34,12 @@ runs:
       run: /usr/bin/xcodebuild -version
       shell: bash
 
+    # This is added because of bug in Github MacOS machine 
+    - name: ios 18.1 install version
+      run: xcodebuild -downloadPlatform iOS -buildVersion 18.1
+      shell: bash
+
+
     - name: Check flutter found
       id: check_flutter
       shell: bash
